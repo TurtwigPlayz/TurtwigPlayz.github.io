@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  background-color: #242323;
+  color: white;
+}
+
+li, a, p, span, td{
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+h1{
+  padding-bottom: 45px;
+  padding-top: 35px;
+}
+
+h2{
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+
+p{
+  padding-bottom: 18px;
+}
+
+header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-width: 600px;
+}
+
+.navB{
+  list-style: none;
+}
+.navB li{
+  color: green;
+  display: inline;
+  padding: 20px;
+}
+.navB li a{
+  color: white;
+}
+.navB li a:hover{
+  color: cornflowerblue;
+}
+
+.headerLine hr{
+  border-top: 1px white;
+}
+
+.mainSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:20px;
+  align-items: start;
+}
+
+@media (max-width: 700px){
+  .mainSection {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.mainSection:before{
+  content:"";
+  border: 1px solid white;
+  align-self: stretch;
+}
+
+.sideBox{
+/*    max-width: 250px;*/
+  padding:20px;
+  /*flex: 1;*/
+  order: -1;
+  flex-shrink: 1;
+  flex-grow:0;
+  flex-basis: auto;
+}
+
+.mainBox{
+  padding:20px;
+  min-width: 400px;
+  max-width: 650px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.portrait{
+  border-radius: 50%;
+  display: block;
+  max-height: fit-content;
+  max-width: 250px;
+}
+
+figcaption{
+  text-align: center;
+}
+
+.caption{
+  margin: auto;
+  padding: 10px;
+}
+
+td{
+  padding-left: 10px
+}
+
+th{
+  text-align: left;
+}
+
+.tableLeft{
+  text-align: right;
+  padding-left: 50px;
+}
+
+table{
+  padding-bottom: 30px;
+}
+
+ul{
+  padding: 20px;
+
+}
